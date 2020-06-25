@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<title>Home</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="firstpage/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  
+<link rel="stylesheet" type="text/css" href="firstpage/css/style.css" />
+<link rel="stylesheet" type="text/css" href="firstpage/css/zoomslider.css" />
+
+<link rel="stylesheet" href="css/lightbox.css">
+<!-- carousel slider -->  
+<link href="firstpage/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all"> 
+<!-- //carousel slider -->
+<link href="firstpage/css/font-awesome.css" rel="stylesheet"> 
+<script type="text/javascript" src="firstpage/js/modernizr-2.6.2.min.js"></script>
+<script src="firstpage/js/jquery-2.2.3.min.js"></script>
+<script src="firstpage/js/bootstrap.js"></script>
+<!--/web-fonts-->
+<link href="http://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+<!--//web-fonts-->
+</head>
+<body>
+	<div id="demo-1" data-zs-src='["firstpage/images/b1.jpg","firstpage/images/6.jpg","firstpage/images/b2.jpg","firstpage/images/b3.jpg","images/b4.jpg"]' data-zs-overlay="dots">
+		<div class="demo-inner-content">
+		<!--/header-w3l-->
+			   <div class="header-w3-agileits" id="home">
+			     <div class="inner-header-agile">	
+				<nav class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a  href="index.html"><span class="letter">T</span>ech <span>E</span>du</a></h1>
+					</div>
+					<!-- navbar-header -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">首页</a></li>
+								<li><a href="http://laptop-bh43578p:8080/Exam/index.jsp" class="scroll">登录</a></li>
+								<li><a href="http://laptop-bh43578p:8080/Exam/register.jsp" class="scroll">注册</a></li>
+								<li><a href="http://laptop-bh43578p:8080/Exam/login.jsp" class="scroll">进入后台</a></li>
+							</ul>
+						</div>
+					<div class="clearfix"> </div>	
+				</nav>
+			</div> 
+
+			   </div>
+		<!--//header-w3l-->
+			<!--/banner-info-->
+			   <div class="baner-info">
+			       <h4>Online Examination</h4>
+				   <h3>让考试更简单</h3>
+				  <p>智能、专业、简单的在线考试系统，适用于各种考试、练习、培训、竞赛、笔试及作业。 </p>
+				  
+			   </div>
+			<!--/banner-ingo-->		
+		</div> 
+    </div>
+  <!--/banner-section-->
+  <!--about -->
+	<div id="about" class="wthree-about w3ls-section">
+		<div class="container">
+				
+			<h2 class="w3ls-title">关于我们</h2>
+			<h5>从现在开始，这是一个新的起点！</h5>
+			<div class="col-md-7  w3ls-about-left">
+				<p>Online Examination是一款免费注册、立即使用的在线考试系统，适用于各种考试、练习、作业、竞赛及笔试。我们专注于提供专业化的在线考试平台服务，并致力于让考试更简单、更专业、更可靠，在不同行业、不同领域、不同场景下提供了全方位的解决方案与服务。 </p>
+				<p class="about-bottom">Online examination is a free and immediate online examination system, which is suitable for all kinds of examinations, exercises, assignments, competitions and written examinations. We focus on providing professional online examination platform services, and are committed to making the examination simpler, more professional and more reliable, providing a full range of solutions and services in different industries, fields and scenarios.</p>
+			</div>
+			<div class="col-md-5 w3ls-row">
+				<div class="col-md-6 col-sm-6 wthree-about-left">
+					<img src="firstpage/images/about2.jpg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-6 col-sm-6 w3ls-row alert wthree-about-right">
+					<img src="firstpage/images/about3.jpg" class="img-responsive" alt=""/>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="stats-info agileits-w3layouts">
+				
+				<div class="clearfix"></div>
+		 </div>
+		</div>
+	</div>
+	<!-- //about -->
+
+
+  <!--//main-header-->
+	<script type="text/javascript" src="firstpage/js/jquery.zoomslider.min.js"></script>
+
+<script src="firstpage/js/owl.carousel.js"></script>  
+	<script>
+		$(document).ready(function() { 
+			$("#owl-demo").owlCarousel({
+			  autoPlay: true, //Set AutoPlay to 3 seconds
+			  items :3,
+			  itemsDesktop : [640,2],
+			  itemsDesktopSmall : [414,1],
+			  navigation : true,
+			  // THIS IS THE NEW PART
+				afterAction: function(el){
+					//remove class active
+					this
+					.$owlItems
+					.removeClass('active')
+					//add class active
+					this
+					.$owlItems //owl internal $ object containing items
+					.eq(this.currentItem + 1)
+					.addClass('active')
+					}
+			// END NEW PART
+		 
+			});
+			
+		}); 
+	</script>
+	
+
+<script type="text/javascript" src="firstpage/js/numscroller-1.0.js"></script>
+	
+<script src="firstpage/js/SmoothScroll.min.js"></script>
+  </body>
+ </html> 
